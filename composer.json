@@ -1,0 +1,29 @@
+{
+  "name": "askedio/laravel-ratchet",
+  "description": "A Ratchet Server built for Laravel",
+  "keywords": [
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": ">=8.0.0",
+    "ext-zmq": "*",
+    "cboden/ratchet": "^0.4",
+    "graham-campbell/throttle": "^10.0",
+    "laravel/framework": "^10.0",
+    "react/zmq": "0.2.*|0.3.*|0.4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Askedio\\LaravelRatchet\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Askedio\\LaravelRatchet\\Providers\\LaravelRatchetServiceProvider"
+      ]
+    }
+  }
+}
